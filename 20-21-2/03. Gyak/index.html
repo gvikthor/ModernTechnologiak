@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Gyakorlat</title>
+</head>
+<style>
+    /*
+    #kert li{
+        color: red;
+    }
+    */
+    /*
+    .gyumolcs{
+        color: red;
+    }
+    */
+    /*
+    #kert #korte{
+        color: red;
+    }
+    */
+    #kert ul #korte{
+        color: red;
+    }
+    .szerszam{
+        color: grey;
+    }
+</style>
+<body>
+    <div id="kert">
+        <p>
+            Ebben a kertben sok a <b>fa</b>, a <b id="korte">gazda (Körte István)</b> büszke rá. Ilyen növények vannak:
+        </p>
+        <ul>
+            <li class="gyumolcs" id="alma">Alma</li>
+            <li class="gyumolcs" id="korte">Körte</li>
+            <li class="gyumolcs" id="szilva">Szilva</li>
+        </ul>
+    </div>
+    <div id="muhely">
+        <p>Ebben a műhelyben sok a szerszám.</p>
+        <ul>
+            <li class="szerszam" id="csavarhuzo">Csavarhúzó</li>
+            <li class="szerszam" id="kalapacs">Kalapács</li>
+            <li class="szerszam" id="villaskulcs">Villáskulcs</li>
+            <li class="szerszam" id="korte">Villanykörte</li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

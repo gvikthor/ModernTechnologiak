@@ -305,3 +305,39 @@ Adjunk meg egy CinemaCity mozit, ahol vetítették a Barackfa című filmet!
 vagy  ||   altgr W
 és    &&   altgr C
 */
+
+
+
+
+const ebed = {
+    eloetelek: [
+        {
+            nev: 'Libamáj',
+            evoeszkoz: 'villa'
+        },
+        {
+            nev: 'Tepertő',
+            evoeszkoz: 'kéz'
+        }
+    ],
+    foetelek: [
+        {
+            nev: 'Húsleves',
+            evoszekoz: 'kanál'
+        },
+        {
+            nev: 'Nagy BigMac Menü zéró kólával, borsos krumplival',
+            evoeszkoz: 'bruh'
+        }
+    ],
+    desszertek: [
+        {
+            nev: 'Gyümölcssaláta',
+            evoeszkoz: 'kanál'
+        },
+        {
+            nev: 'SHÜTI',
+            evoeszkoz: 'http://ehok.elte.hu/nu/index.php/2021/02/21/jelentkezz-a-shuti-be'
+        }
+    ]
+}
