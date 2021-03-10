@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="user-form">
+        <h1>Family name</h1>
+        <input name="familyname">
+
+        <h1>Given Name</h1>
+        <input name="givenname">
+
+        <h1>Age</h1>
+        <input name="age">
+
+        <h1>Gender</h1>
+        <input type="radio" name="gender" value="m"> Male <br>
+        <input type="radio" name="gender" value="f"> Female
+
+        <h1>City</h1>
+        <select name="city">
+            <option value="bp">Budapest</option>
+            <option value="db">Debrecen</option>
+            <option value="sz">Szeged</option>
+            <option value="mi">Miskolc</option>
+            <option value="100k">Other city with 100.000+ pop</option>
+            <option value="10k">Other city with 10.000+ pop</option>
+            <option value="1k">Other city with 1.000+ pop</option>
+            <option value="other">Other - village</option>
+        </select>
+
+        <h1>Colors</h1>
+        <input type="checkbox" name="color[]" value="red"> Red <br>
+        <input type="checkbox" name="color[]" value="orange"> Orange <br>
+        <input type="checkbox" name="color[]" value="yellow"> Yellow <br>
+        <input type="checkbox" name="color[]" value="green"> Green <br>
+        <input type="checkbox" name="color[]" value="blue"> Blue <br>
+        <input type="checkbox" name="color[]" value="violet"> Violet
+
+        <br><br>
+
+        <input type="submit">
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
