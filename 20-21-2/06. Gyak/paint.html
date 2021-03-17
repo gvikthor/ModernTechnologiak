@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<style>
+    canvas{
+        border: 1px solid black;
+    }
+    table tr td{
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    .selected{
+        border: 3px solid rgb(255, 0, 190)
+    }
+</style>
+<body>
+    <table>
+        <tr id="widths">
+            <td data-width="5" >5px</td>
+            <td data-width="10" class="selected">10px</td>
+            <td data-width="15">15px</td>
+            <td data-width="20">20px</td>
+            <td data-width="25">25px</td>
+        </tr>
+        <tr id="colors">
+            <td style="background-color: black" class= "selected"></td>
+            <td style="background-color: #b10439"></td>
+            <td style="background-color: #fdbe12"></td>
+            <td style="background-color: #55b24c"></td>
+            <td style="background-color: #005597"></td>
+        </tr>
+    </table>
+    <canvas width="1500" height="800"></canvas>
+    <button>Delete</button>
+</body>
+<script src="paint.js"></script>
+</html>
