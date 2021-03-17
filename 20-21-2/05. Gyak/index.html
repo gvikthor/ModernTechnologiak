@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #errors{
+        border: 3px solid red;
+        color: red;
+        font-weight: bolder;
+        display: none;
+    }
+</style>
 <body>
     <form id="user-form">
         <h1>Family name</h1>
@@ -34,17 +42,18 @@
         </select>
 
         <h1>Colors</h1>
-        <input type="checkbox" name="color[]" value="red"> Red <br>
-        <input type="checkbox" name="color[]" value="orange"> Orange <br>
-        <input type="checkbox" name="color[]" value="yellow"> Yellow <br>
-        <input type="checkbox" name="color[]" value="green"> Green <br>
-        <input type="checkbox" name="color[]" value="blue"> Blue <br>
-        <input type="checkbox" name="color[]" value="violet"> Violet
+        <input type="checkbox" name="color" value="red"> Red <br>
+        <input type="checkbox" name="color" value="orange"> Orange <br>
+        <input type="checkbox" name="color" value="yellow"> Yellow <br>
+        <input type="checkbox" name="color" value="green"> Green <br>
+        <input type="checkbox" name="color" value="blue"> Blue <br>
+        <input type="checkbox" name="color" value="violet"> Violet
 
         <br><br>
 
         <input type="submit">
     </form>
+    <div id="errors"></div>
 </body>
 <script src="script.js"></script>
 </html>

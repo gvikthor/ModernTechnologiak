@@ -1,4 +1,5 @@
 const form = document.querySelector('#user-form')
+const errorsDiv = document.querySelector('#errors')
 
 form.addEventListener('submit', (event)=>{
     const errors = []
@@ -33,8 +34,28 @@ form.addEventListener('submit', (event)=>{
         errors.push('City must be from the given list')
     }
 
-    console.log(form.color.value)
+    //console.log(form['color[]'])
 
-    console.log(errors)
-    event.preventDefault()
+    let atLeastOneChecked = false
+    for(const curColor of form.color){
+        if(curColor.checked){
+            if(!['red', 'orange', 'yellow', 'green', 'blue', 'violet'].includes(curColor.value)){
+                errors.push(`Color must be of the provided ones! ${curColor.value} is not one of those.`)
+            }else{
+                atLeastOneChecked = true
+            }
+        }
+    }
+
+    if(!atLeastOneChecked){
+        errors.push('At least one valid color must be selected!')
+    }
+
+    if(errors.length > 0){
+        event.preventDefault()
+        errorsDiv.style.display = 'block'
+        for(const error of errors){
+            errorsDiv.innerHTML += `${error} <br>`
+        }
+    }
 })
