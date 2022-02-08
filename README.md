@@ -1,2 +1,3 @@
 # Modern Technologiák 2.
-Csoport#1 szerda 16:00-17:30
+60 kredites csoport: szerda 14:15 - 15:45
+MM Csoport: szerda 16:00 - 17:30
