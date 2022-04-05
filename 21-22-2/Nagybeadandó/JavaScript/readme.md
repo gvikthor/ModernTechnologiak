@@ -1,3 +1,5 @@
+# JavaScript beadandó algoritmus segítség
+
 Adott egy mező "típus", amiben a `sor` és `oszlopindex` értelemszerű, a `negyed`  megadja, hogy hanyadik negyedben van az adott mező (0, 1, 2, 3), a `bábu` pedig megadja, milyen bábu van oda lehelyezve (Ü, A, B, C, D; ahol Ü az üres mező)
 
 `mező : {sor_index : egész, oszlop_index : egész, negyed : egész, bábu : szöveg}`
