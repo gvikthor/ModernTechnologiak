@@ -1,0 +1,50 @@
+[
+    {
+        "title" : "Bad Guys",
+        "type" : "movie",
+        "length" : 90,
+        "characters" : [
+            "Wolf", "Snake", "Shark", "Tarantula", "Piranha"
+        ]
+    },
+    {
+        "title" : "The Batman",
+        "type" : "movie",
+        "length" : 190,
+        "characters" : [
+            "Batban", "The Riddler"
+        ]
+    },
+    {
+        "title" : "Fantastic Beasts",
+        "type" : "movie",
+        "length" : 180,
+        "characters" : [
+            "Newt", "Grindelwald", "Dumledore"
+        ]
+    },
+    {
+        "title" : "Boba Fett",
+        "type" : "series",
+        "length" : 400,
+        "characters" : [
+            "Boba Fett", "Fennec", "Mandalorian"
+        ]
+    },
+    {
+        "title" : "Encanto",
+        "type" : "movie",
+        "length" : 95,
+        "characters" : [
+            "Dolores", "Isabella", "Abuela"
+        ]
+    },
+    {
+        "title" : "Moon Knight",
+        "type" : "series",
+        "length" : 240,
+        "characters" : [
+            "Mark"
+        ]
+    }
+]
