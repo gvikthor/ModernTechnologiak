@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-color: #fafafa;
+    }
+    form, input, select{
+        font-size: 20px;
+    }
+    input, select{
+        margin-right: 30px;
+        border-radius: 10px;
+        padding: 3px;
+        border: none;
+        -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.31); 
+        box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.31);
+    }
+    .small{
+        width: 50px;
+        text-align: center;
+    }
+    table{ 
+        border-collapse: separate; 
+        border-spacing: 0 10px; 
+        margin-top: -10px;
+        width: 100%;
+    }
+    td, th{
+        border: solid 0px white;
+        border-style: solid none;
+        padding: 10px;
+    }
+    td:first-child{
+        border-left-style: solid;
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;
+    }
+    td:last-child{
+        border-right-style: solid;
+        border-bottom-right-radius: 10px; 
+        border-top-right-radius: 10px; 
+    }
+    .green td{
+        background-color: #5cf269;
+    }
+    .yellow td{
+        background-color: #f7c845;
+    }
+    .red td{
+        background-color: #f53b60;
+    }
+    #tables{
+        display: flex;
+    }
+    #tables div{
+        width: 20%;
+        margin-right: 30px;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        height: fit-content;
+        background-color: white;
+        -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.31); 
+        box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.31);
+    }
+</style>
+<body>
+    <form>
+        Valami: <input>
+        Valami: <select>
+            <option>Valami</option>
+            <option>Valami</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <div id="tables">
+        <div>
+            <h1>Valami</h1>
+            <table>
+                <tr>
+                    <th>Valami</th>
+                    <th>Valami</th>
+                    <th>Valami</th>
+                </tr>
+                <tr class="green">
+                    <td>Valami</td>
+                    <td>Valami</td>
+                    <td>Valami</td>
+                </tr>
+                <tr class="yellow">
+                    <td>Valami</td>
+                    <td>Valami</td>
+                    <td>Valami</td>
+                </tr>
+                <tr class="red">
+                    <td>Valami</td>
+                    <td>Valami</td>
+                    <td>Valami</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <h1>Valami</h1>
+                <tr>
+                    <th>Valami</th>
+                    <th>Valami</th>
+                </tr>
+                <tr>
+                    <td>Valami</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Valami</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Valami</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
