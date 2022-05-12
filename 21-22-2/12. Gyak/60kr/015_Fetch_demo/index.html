@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time"></div>
+    <button id="refresh">Valami</button>
+    <ul id="movies"></ul>
+
+    <script>
+        const timeDiv = document.querySelector("#time")
+        const btn = document.querySelector("#refresh")
+        const movieUL = document.querySelector("#movies")
+
+        function fetchke(celnev, fuggveny, json = true){
+            if(json) fetch(celnev).then(v => v.json()).then(e => fuggveny(e))
+            else     fetch(celnev).then(v => v.text()).then(e => fuggveny(e))
+        }
+
+        function updateTime(time){
+            timeDiv.innerHTML = time
+        }
+        setInterval(()=>{
+            fetchke("time.php", updateTime, false)
+        }, 1000)
+
+        
+        function writeMovies(movies){
+            movies.forEach(m => {
+                const newLI = document.createElement('li')
+                newLI.innerHTML = `Cím: ${m.title}, megjelent: ${m.release}`
+                movieUL.appendChild(newLI)
+            })
+        }
+        btn.addEventListener('click', ()=>{
+            fetchke("json.php", writeMovies)
+        })
+    </script>
+</body>
+</html>
