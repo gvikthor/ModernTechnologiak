@@ -216,7 +216,7 @@ console.log(
 const words = [
     'nyitva',
     'nyávog',
-    'Nyx',
+    'nyx',
     'meggyfa',
     'meggyőz'
 ]
