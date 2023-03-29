@@ -98,7 +98,7 @@ const people = [
     }
 ]
 
-/*function generateElement(parent, type, fillWithData){
+function generateElement(parent, type, fillWithData){
     const newElement = document.createElement(type)
     fillWithData(newElement)
     parent.appendChild(newElement)
@@ -112,7 +112,7 @@ generateElement(document.body, 'table', peopleTable => {
             generateElement(headerRow, 'th', th => th.innerText = 'Friends')
         })
     })
-})*/
+})
 
 const peopleTable = document.createElement('table')
     const peopleTableHead = document.createElement('thead')
