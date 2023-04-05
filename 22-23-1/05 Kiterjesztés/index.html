@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .delete-row{
+        cursor: pointer;
+    }
+    .delete-row:hover{
+        opacity: 70%;
+    }
+</style>
+<body>
+    <ul>
+        <li data-color="blue">Kék</li>
+        <li data-color="red">Piros</li>
+        <li data-color="purple">Lila</li>
+        <li data-color="orange">Narancssárga</li>
+    </ul>
+
+    Név: <input id="input-name"><br>
+    Életkor: <input id="input-age"><br>
+    <button id="btn-add">Hozzáad</button>
+    <table id="people">
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Életkor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-type="string">Gergő</td>
+                <td data-type="number">25</td>
+                <td class="delete-row">🚯</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+<script src="./script.js"></script>
