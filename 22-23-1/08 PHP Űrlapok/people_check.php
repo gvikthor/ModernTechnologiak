@@ -45,7 +45,10 @@ if($form_data['age'] == '') {
     $errors[] = 'Age must be at least 18';
 }
 
-if(count($form_data['animalnames']) == 0) {
+$filtered_animals = array_filter($form_data['animalnames'], function ($animal){
+    return strlen($animal) > 0;
+});
+if(count($filtered_animals) == 0) {
     $errors[] = 'Animal names are required';
 }
 
