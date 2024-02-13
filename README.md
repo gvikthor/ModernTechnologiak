@@ -1,2 +1,2 @@
 # Modern Technologiák 2.  
-Szerda 8:15-9:45
+Kedd: 16:00-17:30
