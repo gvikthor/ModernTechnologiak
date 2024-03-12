@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body > div {
+        margin: auto;
+        width: 50%;
+    }
+    table {
+        width: 100%;
+    }
+    table, tr, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .selected {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div>
+        <div id="pop-changing-buttons">
+            <button data-deltapop="1000000">+1M Fő</button>
+            <button data-deltapop="100000">+100k Fő</button>
+            <button data-deltapop="-100000">-100k Fő</button>
+            <button data-deltapop="-1000000">-1M Fő</button>
+        </div>
+        <table id="eu-table">
+            <thead>
+                <tr>
+                    <th>Ország</th>
+                    <th>Főváros</th>
+                    <th>Nyelv</th>
+                    <th>Lakosság</th>
+                    <th>Terület</th>
+                    <th>Népsűrűség</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>
