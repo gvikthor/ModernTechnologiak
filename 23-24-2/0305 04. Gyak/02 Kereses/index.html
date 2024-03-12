@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, tr, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .small-country {
+        background-color: deepskyblue;
+    }
+    .medium-country {
+        background-color: sandybrown;
+    }
+    .large-country {
+        background-color: crimson;
+    }
+</style>
+<body>
+    <!--label for="search-name">Országnév</label-->
+    <input id="search-name" placeholder="Ország"> <br>
+
+    <input type="radio" name="search-and-or" id="and-button" value="and"> <label for="and-button">És</label> <br>
+    <input type="radio" name="search-and-or" id="or-button"  value="or">  <label for="or-button">Vagy</label> <br>
+
+    <input id="search-language" placeholder="Nyelv"> <br>
+    <button id="search-btn">🔎</button>
+
+    <br>
+
+    <!--form id="search-form">
+        <input name="name">
+        <input type="submit" value="🔎">
+    </form-->
+
+    <table id="eu-table">
+        <thead>
+            <tr>
+                <th>Ország</th>
+                <th>Főváros</th>
+                <th>Nyelv</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<script src="script.js"></script>
