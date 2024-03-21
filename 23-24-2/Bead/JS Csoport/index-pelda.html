@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTech 2. - Csoportos beadandó</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Password strength checker</h1>
+    <div id="input-area">
+        <input id="password">
+        <button id="check">Check</button>
+    </div>
+    <div id="output-area">
+        <div id="strength">
+            <span id="strength-text">Password strength: <span id="strenght-number">4</span>/10</span>
+            <span class="point scored"></span>
+            <span class="point scored"></span>
+            <span class="point scored"></span>
+            <span class="point scored"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+        </div>
+        <div id="messages">
+            <div class="error">
+                <h2>Missing special character</h2>
+                <span>Put at least one of these characters into your password: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~</span>
+            </div>
+            <div class="error">
+                <h2>Missing number</h2>
+                <span>You should have at least one number in your password</span>
+            </div>
+            <div class="warning">
+                <h2>Date</h2>
+                <span>Your password contains a date that might be a birthday or a significant life event.</span>
+            </div>
+            <div class="warning">
+                <h2>Pet name</h2>
+                <span>Your password possibly contains the name of a pet.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
