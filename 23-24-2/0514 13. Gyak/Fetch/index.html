@@ -1,0 +1,17 @@
+<button>Fetch</button>
+<ul id="lista"></ul>
+
+<script>
+const button = document.querySelector('button')
+const list = document.querySelector('ul')
+
+button.addEventListener('click', e => {
+    fetch('data.php')
+    .then(result => result.json()) // lehetne .text() is, ha nem jsont kapok
+    .then(movies => {
+        for(const movie of movies){
+            list.innerHTML += `<li>${movie.title}</li>`
+        }
+    })
+})
+</script>
