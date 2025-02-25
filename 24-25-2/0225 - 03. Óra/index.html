@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .done {
+        text-decoration: line-through;
+        color: green;
+    }
+    .done::marker {
+        content: '✅';
+    }
+    .item:not(.done)::marker {
+        content: '⭕';
+    }
+</style>
+<body>
+    <button id="first-button">Click me!</button>
+
+    <ul id="shopping-list">
+        <li class="item">Milk</li>
+        <li class="item">Jam</li>
+        <li class="item">Orange</li>
+        <li class="item">Shampoo</li>
+    </ul>
+
+    <input id="new-item"> <button id="add-new-item">+</button>
+    
+    <script src="index.js"></script>
+</body>
+</html>
