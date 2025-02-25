@@ -6,9 +6,31 @@
     <title>Document</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body, input, button {
+        font-family: 'Montserrat', 'sans-serif';
+        font-size: xx-large;
+    }
+    button, input {
+        padding: 5px;
+        border-radius: 10px;
+    }
+    button {
+        background-color: #008C95;
+        border: none;
+    }
+    button:hover {
+        filter: brightness(80%);
+    }
+    button:active {
+        filter: brightness(60%);
+    }
+    input {
+        border: 1px solid #000000;
+    }
     .done {
         text-decoration: line-through;
-        color: green;
+        color: #13c213;
     }
     .done::marker {
         content: '✅';

@@ -1,11 +1,11 @@
 // function delegálás(zöld, világoszöld, kék, rózsaszín)
-function delegate(parent, child, when, what){
-    function eventHandlerFunction(event){
-        let eventTarget  = event.target;
+function delegate(parent, child, when, what) {
+    function eventHandlerFunction(event) {
+        let eventTarget = event.target;
         let eventHandler = this;
         let closestChild = eventTarget.closest(child);
 
-        if(eventHandler.contains(closestChild)){
+        if (eventHandler.contains(closestChild)) {
             what(event, closestChild);
         }
     }
@@ -93,3 +93,40 @@ delegate(shoppingListUL, 'li', 'click', (event, li) => {
     }
 })
 */
+
+const addNewItemButton = document.querySelector('#add-new-item')
+const newItemInput = document.querySelector('#new-item')
+/*
+function addNewItem(){
+    const itemName = newItemInput.value
+    
+    //shoppingListUL.innerHTML += `<li class="item">${itemName}</li>`
+    
+    // 1.: Létrehozok egy új elemet
+    const newLI = document.createElement('li')
+    
+    // 2.: Feltöltöm tartalommal
+    newLI.innerText = itemName
+    newLI.classList.add('item')
+
+    // 3.: Befűzöm az oldalba
+    shoppingListUL.appendChild(newLI)
+
+}
+*/
+
+
+function addNewItem(){
+    const itemName = newItemInput.value.trim()
+    if(itemName){
+        shoppingListUL.innerHTML += `<li class="item">${itemName}</li>`
+        newItemInput.value = ''
+    }
+}
+
+eventhandle(addNewItemButton, 'click', addNewItem)
+eventhandle(newItemInput, 'keydown', (event) => {
+    if(event.key == 'Enter') {
+        addNewItem()
+    }
+})

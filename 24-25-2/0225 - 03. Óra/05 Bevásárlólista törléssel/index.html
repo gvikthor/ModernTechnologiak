@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body, input, button {
+        font-family: 'Montserrat', 'sans-serif';
+        font-size: xx-large;
+    }
+    button, input {
+        padding: 5px;
+        border-radius: 10px;
+    }
+    button {
+        background-color: #008C95;
+        border: none;
+    }
+    button:hover {
+        filter: brightness(80%);
+    }
+    button:active {
+        filter: brightness(60%);
+    }
+    input {
+        border: 1px solid #000000;
+    }
+    .done {
+        text-decoration: line-through;
+        color: #13c213;
+    }
+    .done::marker {
+        content: '✅';
+    }
+    .item:not(.done)::marker {
+        content: '⭕';
+    }
+</style>
+<body>
+    <ul id="shopping-list">
+        <li class="item">Milk <button class="delete">🚯</button></li>
+        <li class="item">Jam <button class="delete">🚯</button></li>
+        <li class="item">Orange <button class="delete">🚯</button></li>
+        <li class="item">Shampoo <button class="delete">🚯</button></li>
+    </ul>
+
+    <input id="new-item"> <button id="add-new-item">+</button>
+    
+    <script src="index.js"></script>
+</body>
+</html>
