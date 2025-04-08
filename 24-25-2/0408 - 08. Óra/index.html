@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copenhagen Hnefatafl</title>
+</head>
+<style>
+    table, tr, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td {
+        width: 50px;
+        height: 50px;
+        background-color: burlywood;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .selected {
+        background-color: darkolivegreen;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+<body>
+    <h1>Hnefatafl</h1>
+
+    <button id="new-game">
+        Új játék
+    </button>
+    
+    <div id="info-area">
+        <span id="next-light">🐻‍❄️ Világos köre</span>
+        <span id="next-dark">🐻 Sötét köre</span>
+    </div>
+
+    <table id="game-area">
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
